@@ -25,7 +25,17 @@ app.use(express.json())
 app.use(cookie_parser())
 app.use(fileupload())
 app.use(mongo_sanitize())
-app.use(helmet())
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", "'unsafe-inline'"]
+      },
+      reportOnly: true
+    }
+  })
+)
 app.use(xss())
 
 // limit requests
