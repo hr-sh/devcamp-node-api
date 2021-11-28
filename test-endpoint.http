@@ -1,0 +1,106 @@
+GET http://localhost:8080/api/v1/bootcamps
+
+###
+
+GET http://localhost:8080/api/v1/bootcamps/5d713995b721c3bb38c1f5d0
+
+###
+
+PUT http://localhost:8080/api/v1/bootcamps/619a113316e7020e0d2d7eda/photo
+
+###
+
+DELETE http://localhost:8080/api/v1/bootcamps/619a113316e7020e0d2d7eda
+
+###
+
+POST http://localhost:8080/api/v1/bootcamps
+Content-Type: application/json
+
+{
+  "name": "ELearning",
+  "description": "e-learning.com got sold off lol. you need to get a high paying job as a web developer",
+  "website": "https://linkedin.com",
+  "phone": "222-999-1111",
+  "email": "admin@linkedin.com",
+  "address": "Patrika Nagar,Madhapur, Hyderabad 500081, Telangana, India",
+  "careers": ["Web development", "UI design"],
+  "photo": "no-photo.jpg",
+  "housing": false,
+  "jobAssistance": true,
+  "jobGuarantee": false,
+  "averageCost": 5000
+}
+
+###
+
+GET http://localhost:8080/api/v1/courses?select=title
+
+###
+
+GET http://localhost:8080/api/v1/courses/5d725c84c4ded7bcb480eaa0
+
+###
+
+GET http://localhost:8080/api/v1/bootcamps/5d713995b721c3bb38c1f5d0/courses
+
+###
+
+POST http://localhost:8080/api/v1/bootcamps/5d713995b721c3bb38c1f5d0/courses
+Content-Type: application/json
+
+{
+  "title": "Adobe Photoshop Masterclass",
+  "description": "This course will provide you all nessacery training",
+  "weeks": 4,
+  "tuition": 14000,
+  "minimumSkill": "advanced",
+  "scholarshipsAvailable": false,
+  "user": "5d7a514b5d2c12c7449be045"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/courses/61994a36d1a63aa0c401c909
+Content-Type: application/json
+
+{
+  "weeks": 5
+}
+
+###
+
+DELETE http://localhost:8080/api/v1/courses/61994a36d1a63aa0c401c909
+
+###
+
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "name": "wea",
+  "email": "wea@ewa.org",
+  "password": "weaewaewa",
+  "role": "user"
+}
+
+###
+
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "wea@ewa.org",
+  "password": "weaewaewa"
+}
+
+###
+
+GET http://localhost:8080/api/v1/reviews
+
+###
+GET http://localhost:8080/api/v1/bootcamps/5d713995b721c3bb38c1f5d0/reviews
+
+###
+
+GET http://localhost:8080/api/v1/reviews/5d7a514b5d2c12c7449be020
