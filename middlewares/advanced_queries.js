@@ -36,7 +36,7 @@ module.exports = (populateWith) => (req, res, next) => {
   // lt (or) gt -> $lt (or) $gt
   q_str = JSON.stringify(q_str)
     .toString()
-    .replaceAll(/(gt|gte|lt|lte|in)/g, (match) => `$${match}`)
+    .replace(/(gt|gte|lt|lte|in)/g, (match) => `$${match}`)
   q_str = JSON.parse(q_str)
   req.advQueries = {
     q_str,
