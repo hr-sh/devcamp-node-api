@@ -46,8 +46,8 @@ module.exports = {
       throw new errResponse(`No Bootcamp found for ID: ${req.params.id}`, 404)
     }
     // bootcamp.user is same as loggedin user
-    if (b.user.toString() !== req.user.id && req.user.role !== 'admin') {
-      throw new errResponse(`Not authorized to add courses to ${b._id}`, 401)
+    if (b.user !== req.user.id && req.user.role !== 'admin') {
+      throw new errResponse(`Not authorized to add courses to ${b.id}`, 401)
     }
     const c = await Course.create(req.body)
     //res
