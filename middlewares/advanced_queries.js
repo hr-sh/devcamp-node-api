@@ -34,10 +34,9 @@ module.exports = (populateWith) => (req, res, next) => {
     sortBy = req.query.sort.split(',').join(' ')
   }
   // lt (or) gt -> $lt (or) $gt
-  q_str = JSON.stringify(q_str).replaceAll(
-    /(gt|gte|lt|lte|in)/g,
-    (match) => `$${match}`
-  )
+  q_str = JSON.stringify(q_str)
+    .toString()
+    .replaceAll(/(gt|gte|lt|lte|in)/g, (match) => `$${match}`)
   q_str = JSON.parse(q_str)
   req.advQueries = {
     q_str,
