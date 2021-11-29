@@ -15,5 +15,6 @@ Online Learning platform backend using nodejs express
 2. cd into folder and run `npm install`
 3. start mongodb local server
 4. add mongodb connection-string in config/db.js
-5. run `npm run dev`
-6. visit http://localhost:8080
+5. run `node seedDB --import`
+6. run `npm run dev`
+7. visit http://localhost:8080
