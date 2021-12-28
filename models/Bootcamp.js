@@ -96,6 +96,7 @@ const BootcampSchema = new mongoose.Schema(
   {
     toJSON: { virtuals: true },
     toObject: { virtuals: true },
+    // id : false to remove double id, _id in json
     id: false
   }
 )

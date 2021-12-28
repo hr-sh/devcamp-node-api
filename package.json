@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Online Learning platform backend using nodejs",
   "main": "server.js",
+  "engines": {
+    "node": "16.13.0",
+    "npm": "7.20.0"
+  },
   "scripts": {
     "start": "NODE_ENV=production node server",
     "dev": "nodemon server"
