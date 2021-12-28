@@ -4,9 +4,9 @@ Online Learning platform backend using nodejs express
 
 ## steps to test
 
-1. go to [api](http://online-learning-api.ap-south-1.elasticbeanstalk.com/)
-2. test public routes eg. /api/v1/bootcamps
-3. create a account eg. /api/v1/users
+1. go to [api](https://olapi.herokuapp.com/)
+2. test public routes eg. [/api/v1/bootcamps](https://olapi.herokuapp.com/api/v1/bootcamps)
+3. create a account eg. [/api/v1/users](https://olapi.herokuapp.com/api/v1/users)
 4. test all routes
 
 ## steps to run locally
