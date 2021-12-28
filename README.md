@@ -2,14 +2,14 @@
 
 Online Learning platform backend using nodejs express
 
-## steps to test
+## Steps to test
 
 1. Open [https://olapi.herokuapp.com/](https://olapi.herokuapp.com/)
 2. Go to public routes. Eg: [/api/v1/bootcamps](https://olapi.herokuapp.com/api/v1/bootcamps)
 3. create a account Eg. POST [/api/v1/register](https://olapi.herokuapp.com/api/v1/register)
 4. Test all routes
 
-## steps to run
+## Steps to run
 
 1. Cone repository
 2. Cd into folder and run `npm install`
