@@ -9,13 +9,13 @@ This sample express app, has been deployed to heroku at https://olapi.herokuapp.
 
 ``` 
 //on local
-git clone https://github.com/hr-sh/online-learning-api
-cd online-learning-api
+git clone https://github.com/hr-sh/devcamp-node-api
+cd devcamp-node-api
 npm install
 npm run dev
 ```
 
-Open your local browser and verify the sample-node-api is working by accessing:     
+Open your local browser and verify the devcamp-node-api is working by accessing:     
 `http://localhost:8080/api/v1/bootcamps`   
 `http://localhost:8080/api/v1/courses`   
 `http://localhost:8080/api/v1/reviews`
