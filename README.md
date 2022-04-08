@@ -1,13 +1,21 @@
-# ⚡ Online learning application API [(view demo)](https://olapi.herokuapp.com/)
+# devcamp-node-api
+A sample node js api for finding courses and bootcamps using express, mongodb altas. Integrated with mailtrap for email testing and mapquest for location based queries.  
+This sample express app, has been deployed to heroku at https://olapi.herokuapp.com    
 
-Online Learning platform backend using nodejs express
+## Download & Build on local
 
-## Steps to run
+## From github
+### 1) Clone the repository, install node packages  and verify routes locally
 
-1. Clone repository
-2. Cd into folder and run `npm install`
-3. Start mongodb local server
-4. Add mongodb connection-string in config/db.js
-5. Run `node seedDB --import`
-6. Run `npm run dev`
-7. Open http://localhost:8080
+``` 
+//on local
+git clone https://github.com/hr-sh/online-learning-api
+cd online-learning-api
+npm install
+npm run dev
+```
+
+Open your local browser and verify the sample-node-api is working by accessing:     
+`http://localhost:8080/api/v1/bootcamps`   
+`http://localhost:8080/api/v1/courses`   
+`http://localhost:8080/api/v1/reviews`
