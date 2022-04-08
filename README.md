@@ -1,5 +1,5 @@
 # devcamp-node-api
-A sample node js api for finding courses and bootcamps using express, mongodb altas. Integrated with mailtrap for email testing and mapquest for location based queries.  
+A sample node js api for finding courses and bootcamps using express, mongodb atlas. Integrated with mailtrap for email testing and mapquest for location based queries.  
 This sample express app, has been deployed to heroku at https://olapi.herokuapp.com    
 
 ## Download & Build on local
